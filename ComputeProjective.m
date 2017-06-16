@@ -7,6 +7,6 @@ TransformedIm = imwarp(img,tform);
 
 figure;
 imshow(TransformedIm);
-imwrite(TransformedIm, 'cityOutput.jpg', 'jpg');
+imwrite(TransformedIm, 'dogOutput.pgm', 'pgm');
 end
 
