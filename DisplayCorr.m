@@ -10,22 +10,6 @@ matches_with_dist = zeros(num_matches,5);
 matches_with_dist(:,1:4) = matches(:,1:4);
 matches_with_dist(:,5) = dist_vals(:,1);
 
-for j = 1:size(matches,1)
-    if (matches(j,1)==749.49)
-        fprintf('Found %d \n', j);
-    end
-    if (matches(j,1)==531.28)
-        fprintf('Found %d \n', j);
-    end
-    if (matches(j,1)==437.17)
-        fprintf('Found %d \n', j);
-    end
-    if (matches(j,1)==646.63)
-        fprintf('Found %d \n', j);
-    end
-end
-
-
 sorted = sortrows(matches_with_dist,5);
 im1 = imread(image1);
 im2 = imread(image2);
