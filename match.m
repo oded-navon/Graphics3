@@ -3,7 +3,6 @@ function [ num_matches,matches,dist_vals ] = match(image1, image2, distRatio)
 %   Detailed explanation goes here
 [im1, des1, loc1] = sift(image1);
 [im2, des2, loc2] = sift(image2);
-
 dist_vals_not_final = zeros(size(des1,1),1);
 
 % For each descriptor in the first image, select its match to second image.
@@ -20,6 +19,7 @@ for i = 1 : size(des1,1)
       match(i) = 0;
    end
 end
+
 
 num_matches = sum(match > 0);
 matches = zeros(num_matches,4);
