@@ -13,7 +13,7 @@ for i = 1 : size(des1,1)
 
    % Check if nearest neighbor has angle less than distRatio times 2nd.
    if (vals(1) < distRatio * vals(2))
-       dist_vals_not_final(i) = vals(1);
+       dist_vals_not_final(i) = vals(1)/vals(2);
       match(i) = indx(1);
    else
       match(i) = 0;

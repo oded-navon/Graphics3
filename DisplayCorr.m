@@ -1,7 +1,7 @@
 function [displayedCorr] = DisplayCorr(image1, image2, matches, dist_vals, x)
 %DisplayCorr Displays a chosen number of the top correspondences.
 %   Detailed explanation goes here
-[ a,matches,dist_vals ] = match(image1, image2, 0.5);
+%[ a,matches,dist_vals ] = match(image1, image2, 0.5);
 
 num_matches = size(matches,1);
 displayedCorr = zeros(num_matches,4);
